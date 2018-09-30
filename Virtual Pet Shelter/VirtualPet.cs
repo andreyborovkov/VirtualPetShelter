@@ -70,7 +70,7 @@ namespace Virtual_Pet_Shelter
             Tiredness = tiredness;
         }
 
-        public void Status()
+        public void Status()//outputs a single pet status
         {
             Console.WriteLine("Hunger: {1} Thirst: {2}, Boredom: {3}, Tiredness: {4} - {0}", Name, Hunger, Thirst, Boredom, Tiredness);          
         }

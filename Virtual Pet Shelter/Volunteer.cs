@@ -17,7 +17,7 @@ namespace Virtual_Pet_Shelter
             bool isExitNotActivated = true;
             string option;
 
-            while (isExitNotActivated)
+            while (isExitNotActivated)//allows the user to pick another option after picking anything
             {
                 Console.WriteLine("1.Feed the pets\n2.Water the pets\n3.Play with a pet\n4.Quit");
                 option = Console.ReadLine();
@@ -30,13 +30,13 @@ namespace Virtual_Pet_Shelter
                     case "2":
                         WaterAll();
                         break;
-                    case "3":
+                    case "3"://outputs the list of pets, takes in any value from the user, and displays a message
                         Console.WriteLine("What pet do you want to play with?");
                         VirtualPetShelter.DisplayPets();
                         string numberOfPet = Console.ReadLine();
                         Console.WriteLine("Both of you had a lot of fun");
                         break;
-                    case "4":
+                    case "4"://closes the console
                         Environment.Exit(0);
                         isExitNotActivated = false;
                         break;

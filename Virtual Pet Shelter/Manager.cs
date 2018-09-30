@@ -22,7 +22,8 @@ namespace Virtual_Pet_Shelter
                 Console.WriteLine("1.Feed the pets\n2.Adopt a pet\n3.Play with a pet\n4.Pay the bills\n5.Quit");
                 option = Console.ReadLine();
 
-                switch (option)
+                switch (option)//displays the menu for managers and depending on the option picked
+                    //calls different methods
                 {
                     case "1":
                         Console.WriteLine("That's not your job...");
@@ -57,7 +58,8 @@ namespace Virtual_Pet_Shelter
             Console.WriteLine("Send a volunteer to get food from a restaurant");
         }
 
-        public void Adopt()
+        public void Adopt()//displays a list of pets and simply says that the documents needs to be reviewed
+            //after the user inputs anything
         {
             Console.WriteLine("What pet would you like to be adopted?");
             VirtualPetShelter.DisplayPets();
@@ -65,7 +67,7 @@ namespace Virtual_Pet_Shelter
             Console.WriteLine("The adoption documents need to be reviewed.");
         }
 
-        public void PetsStatus()
+        public void PetsStatus()//displays the status of every pet (the real method is in VirtualpetShelter class)
         {
             VirtualPetShelter.PetsStatus();
         }

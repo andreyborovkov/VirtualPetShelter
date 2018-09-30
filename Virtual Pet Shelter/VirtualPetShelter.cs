@@ -8,6 +8,7 @@ namespace Virtual_Pet_Shelter
 {
     static class VirtualPetShelter
     {
+        //instantiates objects of the class VirtualPet and sets all the properties
         static VirtualPet virtualPet1 = new VirtualPet("Fluffy","Dog",45,12,65,43);
         static VirtualPet virtualPet2 = new VirtualPet("Spot","Dog",65,11,55,87);
         static VirtualPet virtualPet3 = new VirtualPet("Bambi","Deer",76,43,32,65);
@@ -27,7 +28,7 @@ namespace Virtual_Pet_Shelter
             }
         }
 
-        public static void DisplayVolunteers()//Displays the values in pets
+        public static void DisplayVolunteers()//Displays the values in volunteers
         {
             for (int i = 0; i < volunteers.Count; i++)
             {
@@ -35,7 +36,7 @@ namespace Virtual_Pet_Shelter
             }
         }
 
-        public static void DisplayManagers()//Displays the values in pets
+        public static void DisplayManagers()//Displays the values in managers
         {
             for (int i = 0; i < managers.Count; i++)
             {
@@ -43,7 +44,7 @@ namespace Virtual_Pet_Shelter
             }
         }
 
-        public static void PetsStatus()
+        public static void PetsStatus()//calls a status method for every single pet
         {
             virtualPet1.Status();
             virtualPet2.Status();
